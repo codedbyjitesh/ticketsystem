@@ -34,15 +34,12 @@ function Dashboard() {
                 'http://127.0.0.1:8000/api/tickets/'
             );
 
-            console.log(response.data);
-
             setTickets(response.data.tickets || []);
 
         } catch (error) {
 
             console.error(
-                'Error fetching tickets:',
-                error
+                'Error fetching tickets:'
             );
         }
     };
@@ -59,18 +56,14 @@ function Dashboard() {
 
                 <div className="left">
 
-                    <TicketForm
-                        formData={formData}
-                        setFormData={setFormData}
+                    <TicketForm  formData={formData}setFormData={setFormData}
                     />
 
                 </div>
 
                 <div className="right">
 
-                    <TicketList
-                        tickets={tickets}
-                    />
+                    <TicketList tickets={tickets}/>
 
                 </div>
 

@@ -38,8 +38,6 @@ function TicketForm(props) {
 
         } catch (error) {
 
-            console.log(error);
-
             alert('Error creating ticket');
         }
     };

@@ -21,7 +21,7 @@ function TicketList(props) {
 
         } catch (error) {
 
-            console.log(error);
+            alert("Error updating status");
         }
     };
 

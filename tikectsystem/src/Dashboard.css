@@ -1,0 +1,32 @@
+header{
+    background-color: #87CEEB;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+  height: 100vh;
+  border:1px solid black;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 48px 40px 32px;
+  gap: 32px;
+}
+
+.left {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center; 
+    height: 100%;
+    background-color: #87CEEB;
+    border:1px solid black;   
+}
+
+.right {
+    background-color: #87CEEB;
+    border:1px solid black; 
+    height: 100%;  
+}
+
